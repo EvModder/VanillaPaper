@@ -1,6 +1,6 @@
 name: VanillaPaper
 main: net.evmodder.vanillapaper.VanillaPaper
-authors: EvModder
+author: EvModder
 website: https://github.com/EvModder/VanillaPaper
 description: Attempts to fix certain vanilla mechanics on Paper.
 version: 1.0
