@@ -32,8 +32,9 @@ public class PaperFix_EntityChangeBlockListener implements Listener{
 
 	@EventHandler(priority = EventPriority.HIGHEST)
 	public void onEntityChangeBlock(final EntityChangeBlockEvent evt){
-		if(evt.getTo() == Material.AIR || !(evt.getEntity() instanceof final FallingBlock falling)) return;
+		if(evt.getTo() == Material.AIR || !(evt.getEntity() instanceof final FallingBlock)) return;
 
+		final FallingBlock falling = (FallingBlock)evt.getEntity();
 		final BoundingBox boundingBox = falling.getBoundingBox().expand(-0.01D);
 
 		for(Vector direction : DIRECTIONS){
